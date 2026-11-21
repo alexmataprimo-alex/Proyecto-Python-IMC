@@ -1,14 +1,12 @@
-# Proyecto-Python-IMC
+# Proyecto Módulo 2 — Fundamentos de Python
 
-## Descripción del programa
-Este programa en Python permite calcular el Índice de Masa Corporal (IMC) de forma interactiva y segura. Cuenta con validaciones robustas que impiden campos de texto vacíos y controlan los errores de entrada para garantizar que la edad, el peso y la estatura sean valores numéricos válidos antes de procesar la fórmula matemática. Finalmente, despliega un reporte limpio y formateado.
+Archivo principal: `ALEJANDRO_MATA_proyectoM2.py`
 
-## Instrucciones de ejecución
-1. Asegúrate de tener Python instalado en tu equipo.
-2. Clona este repositorio o descarga los archivos en tu computadora.
-3. Abre tu terminal o editor de código (como VS Code) en la carpeta del proyecto.
-4. Ejecuta el archivo principal con el siguiente comando:
-   ```bash
-   python calculadora_imc.py
+## Descripción del proyecto
+Este proyecto consolida los retos del Módulo 2 en un solo script estructurado con menú interactivo:
+1. **Validación de longitud de palabra:** exige palabras de entre 4 y 8 caracteres mediante ciclos `while` y registra todos los intentos de la sesión en una lista (`list`).
+2. **Cuadrantes del plano cartesiano:** solicita coordenadas `X` y `Y` distintas de cero, realiza conversión explícita (`casting`) de `str` a `float`, maneja entradas inválidas con `try / except ValueError` y obtiene el nombre del cuadrante desde una tupla (`tuple`) por índice.
 
-   Reflexion personal , en este proyecto python me ayudo a conocere sobre la creacion de codigos y darme la oportunidad de aprender sobre el funcionamiento de python es un reto lo cual estare reforsando lo aprendido para saber crear sitios wed.
+## Cómo ejecutarlo
+```bash
+python ALEJANDRO_MATA_proyectoM2.py
