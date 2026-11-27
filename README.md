@@ -1,12 +1,19 @@
-# Proyecto Módulo 2 — Fundamentos de Python
+# Proyecto M3 - Simulación de Máquina de Galton
 
-Archivo principal: `ALEJANDRO_MATA_proyectoM2.py`
+Simulación en Python del recorrido de 3,000 canicas a través de un tablero de 12 niveles de obstáculos y visualización de resultados mediante un histograma con `matplotlib`.
 
-## Descripción del proyecto
-Este proyecto consolida los retos del Módulo 2 en un solo script estructurado con menú interactivo:
-1. **Validación de longitud de palabra:** exige palabras de entre 4 y 8 caracteres mediante ciclos `while` y registra todos los intentos de la sesión en una lista (`list`).
-2. **Cuadrantes del plano cartesiano:** solicita coordenadas `X` y `Y` distintas de cero, realiza conversión explícita (`casting`) de `str` a `float`, maneja entradas inválidas con `try / except ValueError` y obtiene el nombre del cuadrante desde una tupla (`tuple`) por índice.
+## Lógica de la Máquina de Galton
+La Máquina de Galton consiste en una rejilla vertical de filas de clavijas o pines donde caen canicas desde la parte superior:
+- En cada nivel, la canica choca con un obstáculo y se desvía aleatoriamente hacia la **izquierda** o hacia la **derecha**.
+- Contabilizar los desplazamientos hacia la derecha determina en qué contenedor inferior cae cada canica.
+- Al repetir el proceso miles de veces con decisiones independientes, los resultados tienden a concentrarse en los contenedores centrales, formando una distribución acampanada similar a la distribución binomial/normal.
 
-## Cómo ejecutarlo
-```bash
-python ALEJANDRO_MATA_proyectoM2.py
+## Estructura del proyecto
+- `ALEJANDRO_MATA_proyectoM3.py`: contiene las funciones `simular_canica`, `ejecutar_simulacion_masiva`, `graficar_resultados` y `main`.
+- `README.md`: documentación general del proyecto y reflexión técnica.
+
+## Ejecución
+Desde la carpeta del proyecto en terminal:
+
+```powershell
+py ALEJANDRO_MATA_proyectoM3.py
